@@ -745,8 +745,14 @@ ul.res {
       width: 100%;
       height: 100%;
       position: relative; }
-      .catalog .video a img {
+      .catalog .video a > img {
         height: 100%; }
+        @media (min-width: 992px) {
+          .catalog .video a > img {
+            height: auto; } }
+        @media (min-width: 1200px) {
+          .catalog .video a > img {
+            height: 268px !important; } }
   .catalog .content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -804,7 +810,7 @@ ul.res {
     height: -moz-max-content;
     height: max-content; }
     .catalog .box.bottom {
-      margin-top: 20px; }
+      margin-top: 15px; }
     @media (max-width: 767px) {
       .catalog .box {
         margin: auto;
