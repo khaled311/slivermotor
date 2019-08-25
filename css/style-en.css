@@ -1,0 +1,113 @@
+body{
+    direction: ltr;
+}
+
+@media (max-width: 480px){
+    .navBar .navCon .logo img {
+        position: relative;
+        left: 20px;
+        right: unset;
+    }
+}
+
+.navBar .navCon .links > ul, .navBar .navCon .links .xtr{
+    margin-left: auto;
+    margin-right: unset;
+}
+
+.navBar .navCon .links .xtr .srch {
+    margin-right: 10px;
+    margin-left: unset;
+}
+
+@media (min-width: 992px){
+    .navBar .navCon .links > ul li:not(:last-child) {
+        margin-right: 20px;
+        margin-left: unset;
+    }
+}
+
+@media (min-width: 1200px){
+    .navBar .navCon .links > ul li:not(:last-child) {
+        margin-right: 34px;
+        margin-left: unset;
+    }
+}
+
+.navBar .navCon .links .xtr form.open button{
+    right: 0;
+    left: unset;
+    margin-right: 15px;
+    margin-left: unset;
+}
+
+.about a:first-child{
+    margin-right: 10px;
+    margin-left: unset;
+}
+
+@media (max-width: 480px){
+    .about .btns a:first-child {
+        margin-right: 0;
+    }
+}
+
+.catalog .content .video {
+    margin-right: 30px;
+    margin-left: unset;
+}
+
+@media (max-width: 991px){
+    .catalog .content .video {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 375px){
+    .video .details {
+        font-size: 16px;
+    }
+}
+
+footer .foot-links:after{
+    left: 0;
+    right: unset;
+}
+
+footer .contact ul li > a .icon {
+    margin-right: 10px;
+    margin-left: unset;
+}
+
+footer .contact ul li > a .icon i.fa-phone{
+    transform: rotateY(180deg);
+}
+
+footer .contact .social a:not(:last-child) {
+    margin-right: 27px;
+    margin-left: unset;
+}
+
+.navBar .navCon .logo .icon{
+    right: 20px;
+    left: unset;
+}
+
+.sideNav .opt .xtr{
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.sideNav{
+    left: -100%;
+    right: unset;
+}
+
+.sideNav.open{
+    left: 0;
+}
+
+.sideNav .opt .xtr form button{
+    right: 10px;
+    left: unset;
+}
