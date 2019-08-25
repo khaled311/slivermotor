@@ -105,7 +105,7 @@ ul.res {
       width: 30px;
       height: 30px;
       background-color: #84848445;
-      color: #FFF;
+      color: #888;
       font-size: 15px; }
     .sideNav .opt .xtr {
       position: relative;
@@ -122,25 +122,6 @@ ul.res {
               justify-content: center;
       margin-left: auto;
       margin-right: 10px; }
-      .sideNav .opt .xtr .srch {
-        width: 100%;
-        height: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        background-color: #84848445;
-        cursor: pointer; }
-        .sideNav .opt .xtr .srch i {
-          color: #FFF;
-          font-size: 15px;
-          -webkit-transition: .5s;
-          transition: .5s; }
       .sideNav .opt .xtr form {
         opacity: 0;
         visibility: hidden;
@@ -150,7 +131,7 @@ ul.res {
         right: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(109, 108, 108, 0.9);
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -171,7 +152,7 @@ ul.res {
         .sideNav .opt .xtr form > i {
           position: absolute;
           top: 10%;
-          color: #8a8a8a;
+          color: #d6d6d6;
           font-size: 25px;
           cursor: pointer;
           -webkit-transition: .5s;
@@ -203,7 +184,8 @@ ul.res {
           width: 30px;
           height: 30px; }
           .sideNav .opt .xtr form button i {
-            font-size: 20px; }
+            font-size: 20px;
+            color: #6d6c6c; }
         .sideNav .opt .xtr form input {
           border: 0;
           border-radius: 100px;
@@ -252,7 +234,7 @@ ul.res {
           width: 100%;
           display: block;
           font-size: 16px;
-          color: #000;
+          color: #6c6b6b;
           line-height: 1.6;
           -webkit-transition: .5s;
           transition: .5s; }
@@ -304,10 +286,44 @@ ul.res {
               transform: translateY(-50%);
       cursor: pointer;
       display: none;
-      font-size: 30px; }
+      font-size: 30px;
+      color: #6c6b6b; }
       @media (max-width: 991px) {
         .navBar .navCon .logo .icon {
           display: block; } }
+    .navBar .navCon .logo .srch {
+      width: 100%;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      background-color: #84848445;
+      cursor: pointer;
+      position: absolute;
+      top: 48%;
+      left: 60px;
+      width: 40px;
+      height: 40px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      background-color: transparent;
+      display: none; }
+      .navBar .navCon .logo .srch i {
+        color: #6c6b6b;
+        font-size: 25px;
+        -webkit-transition: .5s;
+        transition: .5s; }
+      @media (max-width: 991px) {
+        .navBar .navCon .logo .srch {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; } }
     .navBar .navCon .links {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -349,7 +365,7 @@ ul.res {
         display: flex;
         margin-right: auto; }
         .navBar .navCon .links .xtr * {
-          color: #000; }
+          color: #6d6c6c; }
         .navBar .navCon .links .xtr .lang, .navBar .navCon .links .xtr .srch {
           width: 36px;
           height: 36px;
@@ -413,7 +429,7 @@ ul.res {
           right: 0;
           width: 100%;
           height: 100%;
-          background-color: rgba(0, 0, 0, 0.9);
+          background-color: rgba(109, 108, 108, 0.9);
           -webkit-transition: .5s;
           transition: .5s;
           z-index: 9; }
@@ -461,7 +477,7 @@ ul.res {
           .navBar .navCon .links .xtr form > i {
             position: absolute;
             top: 25%;
-            color: #8a8a8a;
+            color: #d6d6d6;
             font-size: 25px;
             cursor: pointer; }
 
@@ -602,12 +618,16 @@ ul.res {
         color: #fff; }
       .about a:first-child:after, .about a:first-child:before {
         background-color: #fff; }
+      .about a:first-child:hover:after {
+        left: -50%; }
+      .about a:first-child:hover:before {
+        right: -50%; }
     .about a:last-child {
+      background-color: #6d6c6c;
       color: #FFF; }
       .about a:last-child:hover {
-        color: #6d6c6c; }
-      .about a:last-child:after, .about a:last-child:before {
-        background-color: #6d6c6c; }
+        color: #FFF;
+        background-color: #8b8b8b; }
     .about a:after, .about a:before {
       content: "";
       position: absolute;
@@ -621,10 +641,6 @@ ul.res {
       left: 0%; }
     .about a:before {
       right: 0%; }
-    .about a:hover:after {
-      left: -50%; }
-    .about a:hover:before {
-      right: -50%; }
 
 .video {
   position: relative; }
@@ -962,6 +978,8 @@ footer {
       font-size: 14px; }
       footer .contact ul li > a .icon i {
         margin-top: 3px; }
+    footer .contact ul li > a .details p:first-child {
+      font-family: 'frtBold'; }
     footer .contact ul li > a .details p:last-child {
       color: #cccccc; }
   footer .contact .social a:not(:last-child) {
